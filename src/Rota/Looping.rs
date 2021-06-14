@@ -25,6 +25,7 @@ fn e3_FOR_FiltrarPares(mut num:Vec<i32>) -> LinkedList{
 
 fn e4_CONTINUE_GerarSeqeunciaPar(fim:i32) -> LinkedList{
     let mut seq:LinkedList<i32> = LinkedList::new();
+    let i = 0;
     while i <= fim {
         if i % 2 != 0{
             continue;
@@ -34,7 +35,18 @@ fn e4_CONTINUE_GerarSeqeunciaPar(fim:i32) -> LinkedList{
     return seq; 
 }
 
-fn e5_WHILE_ProximaRaizInteira(mut num:i32) -> i32{
+fn e5_BREAK_TodosPares(num:LinkedList) -> bool{
+    let pares:bool = true;
+    for item in num {
+        if item % 2 != 0 {
+            pares = false;
+            break;
+        }
+    }
+    return pares;
+}
+
+fn e6_WHILE_ProximaRaizInteira(mut num:i32) -> i32{
     let mut resto:f32 = 1.0;
     while resto != 0{
         num + 1;
