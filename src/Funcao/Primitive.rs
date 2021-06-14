@@ -7,11 +7,7 @@ fn e1_OperadoresMatematicos(){
     let x4 = 10 / 10;
     let x5 = 10 % 10;
 
-    //
-    let x3 += 10;
-    let x3 -= 05;
-    let x3 *= 02;
-    let x3 /= 02;
+
 
     //
     let x6 = x1 + x2;

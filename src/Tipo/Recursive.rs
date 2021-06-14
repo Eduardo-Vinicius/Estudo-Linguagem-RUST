@@ -17,7 +17,7 @@ fn e1_Vetor(){
 
 fn e2_Lista(){
     //
-    let mut lista: LinkedList<u32> = LinkedList::new();​
+    let mut lista: LinkedList<u32> = LinkedList::new();
     lista.push_back(10);
     lista.push_back(20);
     lista.push_back(30);
@@ -40,7 +40,7 @@ fn e2_Lista(){
 }
 
 fn e3_Fila(){
-    let fila: VecDeque(u32) = VecDeque()::new();​
+    let fila: VecDeque(u32) = VecDeque::new();
     fila.push_back(10);
     fila.push_back(20);
     fila.push_back(30);

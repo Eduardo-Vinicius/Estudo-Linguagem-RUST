@@ -16,15 +16,10 @@ fn e1_Declaracao(){
     let x11:char = 'a';
 
     //
-    let {x12, x13} = 'a', 'b';
-    let {x14, x15} = 10, 10;
-
-    //
     let x16 = x14;
     let x17 = x14 + x15;
 
-    //
-    const x18 = 10
+    
 }
 
 fn e2_Alteracao(){
