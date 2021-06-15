@@ -1,6 +1,4 @@
-
-
-pub fn mainp(){
+pub fn mainp() {
    //Primitivos
    crate::tipo::Primitive::e1_Declaracao();
    crate::tipo::Primitive::e2_Alteracao();
