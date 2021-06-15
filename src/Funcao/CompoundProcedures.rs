@@ -1,4 +1,5 @@
-fn main() {
+
+pub fn mainProcedure() {
     #[derive(Debug)]
     struct Retangulo {
         altura: i64,

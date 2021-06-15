@@ -1,6 +1,6 @@
 
 
-fn e1_Ordernar(mut num:Vec<i32>) -> Vec<i32>{
+pub fn e1_Ordernar(mut num:Vec<i32>) -> Vec<i32>{
     let mut i = 0;
     let mut j = 0;
     while i < num.len(){

@@ -1,10 +1,10 @@
-
-fn e1_loopexpression(){
-    loop { println!("I live."); } //loop infinito
-    loop { println!("I live."); break;} //loop com uma volta
+use std::collections::LinkedList;
+pub fn e1_loopexpression(){
+    //loop { println!("I live."); } //loop infinito
+    //loop { println!("I live."); break;} //loop com uma volta
 }
 
-fn e2_WHILE_SomarNumeros(fim:i32) -> i32{
+pub fn e2_WHILE_SomarNumeros(fim:i32) -> i32{
     let mut soma = 0;
     let i = 0;
     while i <= fim {
@@ -13,17 +13,17 @@ fn e2_WHILE_SomarNumeros(fim:i32) -> i32{
     return soma;
 }
 
-fn e3_FOR_FiltrarPares(mut num:Vec<i32>) -> LinkedList{
+pub fn e3_FOR_FiltrarPares(mut num:Vec<i32>) -> LinkedList<i32>{
     let mut pares:LinkedList<i32> = LinkedList::new();
     for item in &num{
         if item % 2 == 0{
-            pares.push_back(item);
+            pares.push_back(*item);
         }
     }
     return pares;
 }
 
-fn e4_CONTINUE_GerarSeqeunciaPar(fim:i32) -> LinkedList{
+pub fn e4_CONTINUE_GerarSeqeunciaPar(fim:i32) -> LinkedList<i32>{
     let mut seq:LinkedList<i32> = LinkedList::new();
     let i = 0;
     while i <= fim {
@@ -35,8 +35,8 @@ fn e4_CONTINUE_GerarSeqeunciaPar(fim:i32) -> LinkedList{
     return seq; 
 }
 
-fn e5_BREAK_TodosPares(num:LinkedList) -> bool{
-    let pares:bool = true;
+pub fn e5_BREAK_TodosPares(num:Vec<i32>) -> bool{
+    let mut pares:bool = true;
     for item in num {
         if item % 2 != 0 {
             pares = false;
@@ -46,11 +46,11 @@ fn e5_BREAK_TodosPares(num:LinkedList) -> bool{
     return pares;
 }
 
-fn e6_WHILE_ProximaRaizInteira(mut num:i32) -> i32{
+pub fn e6_WHILE_ProximaRaizInteira(mut num:f32) -> f32{
     let mut resto:f32 = 1.0;
-    while resto != 0{
-        num + 1;
-        resto = num.sqrt() % 1;
+    while resto != 0.0{
+        num + 1.0;
+        resto = num.sqrt() % 1.0;
     }
     return num;
 }

@@ -28,7 +28,7 @@ impl Person {
     }
 }
 
-fn main() {
+pub fn mainPackage() {
     let mut pessoa = Person::new("Eduardo", "Vinicius");
 
     let b = pessoa.full_name();

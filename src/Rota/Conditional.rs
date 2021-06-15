@@ -1,4 +1,4 @@
-fn e1_IF_Aprovado(m:f32) -> str {
+pub fn e1_IF_Aprovado(m:f32) -> String {
     let mut situacao = "Reprovado";
     if m >= 5_f32 {
         situacao = "Aprovado";
@@ -9,27 +9,27 @@ fn e1_IF_Aprovado(m:f32) -> str {
     else{
         situacao = "Reprovado";
     }
-    return situacao;
+    return situacao.to_string();
 }
 
-fn e2_IF_Aprovado(m:f32,f:i32) -> str{
+pub fn e2_IF_Aprovado(m:f32,f:i32) -> String{
     let mut situacao = "";
-    if m < 5 && f >= 25{
+    if m < 5.0 && f >= 25{
         situacao = "Reprovado por nota e falta";
     }
     else if f >= 25 {
         situacao = "Reprovado por falta";
     }
-    else if m < 5 {
+    else if m < 5.0 {
         situacao = "Reprovado por nota";
     }
     else{
         situacao = "Aprovado"
     }
-    return situacao;
+    return situacao.to_string();
 }
 
-fn e3_Switch_Avaliacao(n:str) -> str{
+pub fn e3_Switch_Avaliacao(n:&str) -> String{
     let mut situacao = "";
 
     match n{
@@ -37,13 +37,13 @@ fn e3_Switch_Avaliacao(n:str) -> str{
         "B" => situacao = "Bom",
         _ => situacao = "Ruim",
     }
-    return situacao;
+    return situacao.to_string();
 }
 
-fn e4_Switch_Verdadeiro(){
+pub fn e4_Switch_Verdadeiro(){
     let booleano = false;
     let binario = match booleano{
         false => 0,
         true => 1,
-    }
+    };
 }

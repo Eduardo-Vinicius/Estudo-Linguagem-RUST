@@ -71,16 +71,16 @@ pub fn e4_Pilha() {
 
 pub fn e5_Dicionarios(){
     
-    let mut dicionario: HashMap<i64, &str> = HashMap::new();​
+    let mut dicionario: HashMap<i64, &str> = HashMap::new();
 
     // Inserindo
-    dicionario.insert(1, "C#");​
+    dicionario.insert(1, "C#");
     dicionario.insert(2, "Javascript");
     dicionario.insert(3, "Python");
 
     println!("{:?}",dicionario);
     // Lendo cada um
-    let a = dicionario.get(&1);​
+    let a = dicionario.get(&1);
     let b = dicionario.get(&2);
     let c = dicionario.get(&3);
 

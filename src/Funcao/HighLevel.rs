@@ -1,5 +1,5 @@
 
-fn e1_FuncoesParaNumeros(){
+pub fn e1_FuncoesParaNumeros(){
     let x = 10.1234_f32;
     let y = 9_f32;
 
@@ -12,7 +12,7 @@ fn e1_FuncoesParaNumeros(){
     let x7 = x.powf(2_f32);
 }
 
-fn e2_FuncoesParaTexto(){
+pub fn e2_FuncoesParaTexto(){
     let msg = "Olá! Tudo bem?";
 
     let x1 = msg.to_uppercase();
@@ -28,7 +28,7 @@ fn e2_FuncoesParaTexto(){
 }
 
 use std::collections::LinkedList;
-fn e3_FuncoesParaTiposRecursivos(){
+pub fn e3_FuncoesParaTiposRecursivos(){
     let mut lista:LinkedList<i32> = LinkedList::new();
     lista.push_back(1);
     lista.push_back(2);
@@ -41,14 +41,13 @@ fn e3_FuncoesParaTiposRecursivos(){
     lista.push_back(9);
     lista.push_back(10);
 
-    let x1 = lista.max();
-    let x2 = lista.min();
-    let x3 = lista.len();
-    let x4 = lista.contains(&5);
+
+    let x1 = lista.len();
+    let x2 = lista.contains(&5);
     
 }
 
-fn e4_FuncoesParaConversao(){
+pub fn e4_FuncoesParaConversao(){
     let x = "10.5";
     //
     let x1 = x.parse::<u32>().unwrap();
