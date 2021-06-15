@@ -41,11 +41,11 @@ pub fn e2_Lista(){
 }
 
 pub fn e3_Fila(){
-    let fila: VecDeque(u64) = VecDeque::new();
+    let mut fila: VecDeque(u64) = VecDeque::new();
     fila.push_front(10);
     fila.push_front(20);
     fila.push_front(30);
-    println!("{:?}",fila);
+
     // Remove
     let a = fila.pop_front();​
     let b = fila.pop_front();
@@ -56,7 +56,7 @@ pub fn e3_Fila(){
 }
 
 pub fn e4_Pilha() {
-    let pilha: VecDeque(u64) = VecDeque::new();
+    let mut pilha: VecDeque(u64) = VecDeque::new();
     pilha.push_back(10);
     pilha.push_back(20);
     pilha.push_back(30);
