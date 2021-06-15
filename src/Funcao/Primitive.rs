@@ -1,5 +1,5 @@
 
-fn e1_OperadoresMatematicos(){
+pub fn e1_OperadoresMatematicos(){
     //
     let x1 = 10 + 10;
     let x2 = 10 - 10;
@@ -16,7 +16,7 @@ fn e1_OperadoresMatematicos(){
 
 }
 
-fn e2_OperadoresRelacionais(){
+pub fn e2_OperadoresRelacionais(){
     let x1:bool = 10 > 5;
     let x2:bool = 10 < 5;
     let x3:bool = 10 >= 5;
@@ -32,7 +32,7 @@ fn e2_OperadoresRelacionais(){
 
 }
 
-fn e3_OperadoresLogicos(){
+pub fn e3_OperadoresLogicos(){
     let x1:bool = true && true;
     let x2:bool = true && false;
     let x3:bool = true || true;
