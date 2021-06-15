@@ -1,3 +1,4 @@
+mod tipo;
 fn main() {
-    println!("Hello, world!");
+    tipo::mainp::mainp();
 }

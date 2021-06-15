@@ -1,6 +1,6 @@
 #![allow(unused)]
 
-fn e1_Declaracao(){
+pub fn e1_Declaracao(){
     //
     let x0 = true;
     let x1 = 10;
@@ -12,17 +12,18 @@ fn e1_Declaracao(){
     let x6:i32 = -10;
     let x7:u32 = 10;
     let x9:f32 = 10.5;
-    let x10:String = "olá";
+    let x10:String = "olá".to_string();
     let x11:char = 'a';
 
     //
-    let x16 = x14;
-    let x17 = x14 + x15;
+    let x12 = x6;
+    let x13 = x6 + 5;
 
+    println!("{}",x13);
     
 }
 
-fn e2_Alteracao(){
+pub fn e2_Alteracao(){
     //
     let mut x1 = 10;
     x1 = 15;
@@ -35,12 +36,11 @@ fn e2_Alteracao(){
     let mut x3 = 10;
     x3 = x1 + 5;
     
-    //
-    x3 = x1 = 20;
+
 
 }
 
-fn e3_Conversao(){
+pub fn e3_Conversao(){
     let x = "10.5";
     //
     let x1 = x.parse::<u32>().unwrap();
@@ -52,21 +52,20 @@ fn e3_Conversao(){
     
 }
 
-fn e4_Coercion(){
+pub fn e4_Coercion(){
     //
     let x1:i32 = 10;
-    let x2:u32 = x1;
+    let x2:u32 = x1 as u32;
 
     //
-    let x3:f32 = x2;
+    let x3:f32 = x2 as f32;
 
-    let mut x4 = "x = ";
+    let mut x4:String = "x = ".to_string();
     x4 = format!("x = {}",x1);
     x4 = format!("x = {} e {}",x1,x2);
-    x4 = format!("x = {}",x1 + x2);
 }
 
-fn e5_Inferencia(){
+pub fn e5_Inferencia(){
     //
     let x1 = 10_i32;
     let x2 = 10_u32;

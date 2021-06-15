@@ -1,15 +1,15 @@
 
 
 struct Pessoa{
-    nome:String;
+    nome:String,
 }
 
 struct Familia{
-    pai:Pessoa;
-    mae:Pessoa;
+    pai:Pessoa,
+    mae:Pessoa,
 }
 
-fn e1_Declaracao(){
+pub fn e1_Declaracao(){
     //
     let pessoa = Pessoa{
         nome:"Bruno".to_string(),
@@ -18,62 +18,48 @@ fn e1_Declaracao(){
 
     //
     let pessoa2 = Pessoa{
-        nome:"Bruno".to_string();
+        nome:"Bruno".to_string(),
     };
 
     //
     let familia = Familia{
-        pai:Pessoa{ Nome:"Junior".to_string() },
-        mae:Pessoa{ Nome:"Maria".to_string() } 
+        pai:Pessoa{ nome:"Junior".to_string() },
+        mae:Pessoa{ nome:"Maria".to_string() } 
     };
     let x2 = familia.pai.nome;
     let x3 = familia.mae.nome;
 
     //
-    Pessoa pessoa3 = pessoa;
-    pessoa3.nome = "Ruan";
+    let pessoa3 = pessoa;
+    pessoa3.nome = "Ruan".to_string();
 }
 
-fn e2_ValoresNull(){
-    let pessoa = Pessoa;
 
-}
 
-fn e3_TiposAnonimos(){
-    let pessoa = { nome = "Bruno" };
 
-    let familia = {
-        pai = { nome = "Junior" },
-        mae = { nome = "Maria" }
-    };
-
-    let x1 = familia.pai.nome;
-    let x2 = familia.mae.nome;
-}
-
-fn e4_Alteracao(){
+pub fn e2_Alteracao(){
     let mut p1 = Pessoa{
-        nome = "Bruno"
+        nome:"Bruno".to_string(),
     };
-    p1.nome = "Bruno V.";
+    p1.nome = "Bruno V.".to_string();
 
-    let x1 = "Viana";
+    let x1 = "Viana".to_string();
     p1.nome = x1;
     p1.nome = format!{"Bruno {}",x1};
 
     let x2 = p1.nome;
 }
 
-fn e5_Comparacao(){
-    let p1 = Pessoa { nome = "Bruno" };
-    let p2 = Pessoa { nome = "Bruno" };
+pub fn e3_Comparacao(){
+    let p1 = Pessoa { nome:"Bruno".to_string() };
+    let p2 = Pessoa { nome:"Bruno".to_string() };
 
-    let x1:bool = p1 == p2;
+    let x1:bool = p1.nome == p2.nome;
 
     //
-    let p3 = Pessoa { nome = "Bruno" };
+    let p3 = Pessoa { nome:"Bruno".to_string() };
     let mut p4 = p3;
-    p4.nome = "Ruan";
+    p4.nome = "Ruan".to_string();
 
-    let x12:bool = p3 == p4;
+    let x12:bool = p3.nome == p4.nome;
 }

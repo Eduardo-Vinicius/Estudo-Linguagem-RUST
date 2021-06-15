@@ -1,5 +1,6 @@
+Use std::collections::LinkedList;
 
-fn e1_Vetor(){
+pub fn e1_Vetor(){
     //
     let mut vetor:Vec<i32> = Vec::new();
     vetor.push(10);
@@ -15,7 +16,7 @@ fn e1_Vetor(){
     let x = vetor.len();
 }
 
-fn e2_Lista(){
+pub fn e2_Lista(){
     //
     let mut lista: LinkedList<u32> = LinkedList::new();
     lista.push_back(10);
@@ -39,7 +40,7 @@ fn e2_Lista(){
     lista.pop_front(10);
 }
 
-fn e3_Fila(){
+pub fn e3_Fila(){
     let fila: VecDeque(u32) = VecDeque::new();
     fila.push_back(10);
     fila.push_back(20);
