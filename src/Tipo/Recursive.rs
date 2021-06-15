@@ -1,4 +1,6 @@
-Use std::collections::HashMap;​
+use std::collections::HashMap;​
+use etd::collections::VecDeque;
+use std::collections::LinkedList;
 
 fn e1_Vetor(){
     //
