@@ -28,12 +28,14 @@ fn e1_ParOuImpar(j1:i32,e1:&str,j2:i32) -> &str{
 
 pub fn e2_RecomendacaoMusica(pais:&str, estilo:&str) -> String{
     let mut musica = "";
-    match &pais {
-        &"Brasil" => match &estilo{
-            &"MBP" => musica = "Azul da Cor do mar",
-            &"Trap" => musica = "Tomodachi",
+    match pais {
+        "Brasil" => match estilo{
+            "MBP" => musica = "Azul da Cor do mar",
+            "Trap" => musica = "Tomodachi",
+            _ => musica = "qualquer musica",
         }
-        &"EUA" => musica = "Any music",
+        "EUA" => musica = "Any music",
+        _ => musica = "qualquer musica",
     }
     return musica.to_string();
 }
