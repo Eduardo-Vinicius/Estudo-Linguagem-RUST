@@ -30,7 +30,7 @@ pub fn e1_Declaracao(){
     let x3 = familia.mae.nome;
 
     //
-    let mut pessoa3 = pessoa;
+    let mut pessoa3 = pessoa2;
     pessoa3.nome = "Ruan".to_string();
 }
 
@@ -44,8 +44,7 @@ pub fn e2_Alteracao(){
     p1.nome = "Bruno V.".to_string();
 
     let x1:String = "Viana".to_string();
-    p1.nome = x1;
-    p1.nome = format!{"Bruno {}",x1};
+    p1.nome = format!{"Bruno {}",x1}.to_string();
 
     let x2 = p1.nome;
 }
@@ -58,8 +57,7 @@ pub fn e3_Comparacao(){
 
     //
     let mut p3 = Pessoa { nome:"Bruno".to_string() };
-    let mut p4 = p3;
-    p4.nome = "Ruan".to_string();
+    let mut p4 = Pessoa { nome:"Ruan".to_string() };
 
     let x12:bool = p3.nome == p4.nome;
 }
