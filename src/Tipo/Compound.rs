@@ -11,10 +11,10 @@ struct Familia{
 
 pub fn e1_Declaracao(){
     //
-    let pessoa = Pessoa{
+    let mut pessoa = Pessoa{
         nome:"Bruno".to_string(),
     };
-    let x1 = pessoa.nome;
+    let x1:String = pessoa.nome;
 
     //
     let pessoa2 = Pessoa{
@@ -30,7 +30,7 @@ pub fn e1_Declaracao(){
     let x3 = familia.mae.nome;
 
     //
-    let pessoa3 = pessoa;
+    let mut pessoa3 = pessoa;
     pessoa3.nome = "Ruan".to_string();
 }
 
@@ -43,7 +43,7 @@ pub fn e2_Alteracao(){
     };
     p1.nome = "Bruno V.".to_string();
 
-    let x1 = "Viana".to_string();
+    let x1:String = "Viana".to_string();
     p1.nome = x1;
     p1.nome = format!{"Bruno {}",x1};
 
@@ -57,7 +57,7 @@ pub fn e3_Comparacao(){
     let x1:bool = p1.nome == p2.nome;
 
     //
-    let p3 = Pessoa { nome:"Bruno".to_string() };
+    let mut p3 = Pessoa { nome:"Bruno".to_string() };
     let mut p4 = p3;
     p4.nome = "Ruan".to_string();
 

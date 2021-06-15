@@ -7,34 +7,44 @@ pub fn e1_Declaracao(){
     let x2 = 10.5;
     let x3 = "olá";
     let x4 = 'a';
-    
+    println!("{},{},{},{},{}",x0,x1,x2,x3,x4);
+
     let x5:bool = true;
     let x6:i32 = -10;
     let x7:u32 = 10;
-    let x9:f32 = 10.5;
-    let x10:String = "olá".to_string();
-    let x11:char = 'a';
+    let x8:f32 = 10.5;
+    let x9:String = "olá".to_string();
+    let x10:char = 'a';
+    println!("{},{},{},{},{},{}",x5,x6,x7,x8,x9,x10);
 
     //
     let x12 = x6;
     let x13 = x6 + 5;
 
-    println!("{}",x13);
+    println!("{},{}",x12,x13);
     
 }
 
 pub fn e2_Alteracao(){
     //
     let mut x1 = 10;
-    x1 = 15;
+    println!("{}",x1);
 
+    x1 = 15;
+    println!("{}",x1);
     //
     let x2 = "oie";
+    println!("{}",x2);
+
     let x2 = "olá";
-    
+    println!("{}",x2);
+
     //
     let mut x3 = 10;
+    println!("{}",x3);
+    
     x3 = x1 + 5;
+    println!("{}",x3);
     
 
 
