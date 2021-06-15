@@ -13,7 +13,7 @@ pub fn mainr(){
     let x6 = crate::Rota::Looping::e4_CONTINUE_GerarSeqeunciaPar(5);
     let mut vec2 = vec![1, 2, 3, 4, 5, 6, 7, 8];
     let x7 = crate::Rota::Looping::e5_BREAK_TodosPares(vec2);
-    let x8 = crate::Rota::Looping::e6_WHILE_ProximaRaizInteira(5.0);
+    let x8 = crate::Rota::Looping::e6_WHILE_ProximaRaiz(5.0);
 
     //CompoundLooping
     let mut vec3 = vec![1, 2, 3, 4, 5, 6, 7, 8];

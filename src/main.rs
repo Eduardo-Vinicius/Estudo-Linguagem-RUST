@@ -3,8 +3,8 @@ mod Funcao;
 mod Rota;
 
 fn main() {
-    //tipo::mainp::mainp();
+    tipo::mainp::mainp();
     //Funcao::mainf::mainf();
-    Rota::mainr::mainr();
+    //Rota::mainr::mainr();
 }
 
