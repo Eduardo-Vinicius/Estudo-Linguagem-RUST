@@ -1,5 +1,3 @@
-
-
 struct Pessoa{
     nome:String;
 }
