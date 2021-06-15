@@ -1,4 +1,4 @@
-mod tipo;
+mod Tipo;
 fn main() {
-    tipo::mainp::mainp();
+    Tipo::mainp::mainp();
 }
