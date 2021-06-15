@@ -20,6 +20,6 @@ pub fn mainr(){
     let x9 = crate::Rota::CompoundLooping::e1_Ordernar(vec3);
 
     //CompoundConditional
-    let x10 = crate::Rota::CompoundConditional::e2_RecomendacaoMusica("Brasil","MPB");
+    let x10 = crate::Rota::CompoundConditional::e1_RecomendacaoMusica("Brasil","MPB");
     println!("{}",x10);
 }

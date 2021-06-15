@@ -3,13 +3,13 @@ pub fn e1_FuncoesParaNumeros(){
     let x = 10.1234_f32;
     let y = 9_f32;
 
-    let x1 = x.floor();
-    let x2 = x.ceil();
-    let x3 = x.trunc();
-    let x4 = x.round();
-    let x5 = x.abs();
-    let x6 = x.sqrt();
-    let x7 = x.powf(2_f32);
+    let x1 = x.floor();//arredonda para baixo
+    let x2 = x.ceil();//arredonda numero para um inteiro
+    let x3 = x.trunc();//Remove numero expecificado
+    let x4 = x.round();//arredonda para cima
+    let x5 = x.abs();//Valor absoluto
+    let x6 = x.sqrt();//Raiz
+    let x7 = x.powf(2_f32);//Potencia
 }
 
 pub fn e2_FuncoesParaTexto(){
